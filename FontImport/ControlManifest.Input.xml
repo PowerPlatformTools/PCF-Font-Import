@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<manifest>
+  <control namespace="ppd" constructor="FontImport" version="0.0.2" display-name-key="FontImport" description-key="FontImport description" control-type="virtual" >
+    <external-service-usage enabled="false">
+    </external-service-usage>
+    <data-set name="sampleDataSet" display-name-key="Dataset_Display_Key">
+      <property-set name="name" display-name-key="FontName_Display_Key" description-key="FontName_Desc_Key" of-type="SingleLine.Text" usage="bound" required="true" />
+      <property-set name="url" display-name-key="FontURL_Display_Key" description-key="FontURL_Desc_Key" of-type="SingleLine.Text" usage="bound" required="true" />
+      
+    </data-set>
+    <resources>
+      <code path="index.ts" order="1"/>
+      <platform-library name="React" version="16.8.6" />
+      <platform-library name="Fluent" version="8.29.0" />
+      <resx path="strings/FontImport.1033.resx" version="1.0.0" />
+    </resources>
+  </control>
+</manifest>
